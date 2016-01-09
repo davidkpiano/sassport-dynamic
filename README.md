@@ -29,7 +29,7 @@ Any variables that you defined in `.variables()` will now be interpolated with t
 
 ```scss
 // main.scss
-@import 'themes/#{$theme}';
+@import 'themes/#{$theme} !dynamic';
 ```
 
 This will output the same result as if you had `@import 'themes/material';`.
