@@ -1,0 +1,34 @@
+{
+  "name": "sassport-dynamic-import",
+  "version": "0.0.1",
+  "description": "Sassport loader for dynamically importing files in Sass.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "babel -w ./src -d ./dist",
+    "test": "mocha -w --require babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkpiano/sassport-dynamic-import.git"
+  },
+  "keywords": [
+    "sass",
+    "sassport",
+    "dynamic-import",
+    "css",
+    "scss"
+  ],
+  "author": "David Khourshid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidkpiano/sassport-dynamic-import/issues"
+  },
+  "homepage": "https://github.com/davidkpiano/sassport-dynamic-import#readme",
+  "dependencies": {
+    "node-sass": "^3.4.2",
+    "sassport": "^0.7.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
