@@ -5,7 +5,7 @@ import dynamicLoader from '../dist/index.js';
 describe('Sassport dynamic import loader', () => {
   it('should parse an import through Sass before importing the file', (done) => {
     sassport([ dynamicLoader ])
-      .variables({
+      .globals({
         '$test-foo': 'foo',
         '$test-bar': 'bar'
       })
@@ -24,7 +24,7 @@ describe('Sassport dynamic import loader', () => {
 
   it('should parse an import through Sass before importing the file with multiple variables', (done) => {
     sassport([ dynamicLoader ])
-      .variables({
+      .globals({
         '$test-foo': 'foo',
         '$test-bar': 'bar'
       })

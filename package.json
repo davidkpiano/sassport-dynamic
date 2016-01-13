@@ -26,9 +26,10 @@
   "homepage": "https://github.com/davidkpiano/sassport-dynamic-import#readme",
   "dependencies": {
     "node-sass": "^3.4.2",
-    "sassport": "^0.7.1"
+    "sassport": "^0.8.0"
   },
   "devDependencies": {
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "node-sass": "^3.4.2"
   }
 }

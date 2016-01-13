@@ -8,14 +8,14 @@ First, install [Sassport](https://github.com/davidkpiano/sassport) and the Sassp
 npm install sassport sassport-dynamic --save
 ```
 
-Then, add any dynamic `$variables` that you want to use in your imports to Sassport using `.variables({...})`: 
+Then, add any global `$variables` that you want to use in your imports to Sassport using `.globals({...})`: 
 
 ```js
 var sassport = require('sassport');
 var sassportDynamic = require('sassport-dynamic');
 
 sassport([ sassportDynamic ])
-  .variables({
+  .globals({
     '$theme': 'material'
   })
   .render({
@@ -25,7 +25,7 @@ sassport([ sassportDynamic ])
   });
 ```
 
-Any variables that you defined in `.variables()` will now be interpolated with the `!dynamic` loader:
+Any variables that you defined in `.globals()` will now be interpolated with the `!dynamic` loader:
 
 ```scss
 // main.scss
